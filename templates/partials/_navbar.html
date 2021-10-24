@@ -1,0 +1,31 @@
+{% load static %}
+ <div class="nav-bar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                        <a href="#" class="navbar-brand">MENU</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div  class="collapse navbar-collapse justify-content-between " id="navbarCollapse" >
+                            <div class="navbar-nav mr-auto "  dir="rtl"  style="width: 80%; " >
+
+                                <a href="{% url 'index' %}" class="nav-item nav-link  {% if '/' == request.path %}
+                                active {% endif %}"  style="font-family: 'Markazi Text';font-size: x-large">خانه</a>
+                                <a href="{% url 'cost' %}" class="nav-item nav-link {% if 'cost' in request.path %}
+                                active {% endif %}" style="font-family: 'Markazi Text'; font-size: x-large">تعرفه وکالت  </a>
+                                <a href="{% url 'about' %}" class="nav-item nav-link {% if 'about' in request.path %}
+                                active {% endif %}" style="font-family: 'Markazi Text';font-size: x-large">درباره  من</a>
+                                 <a href="{% url 'consultation' %}" class="nav-item nav-link {% if 'consulatiob' in request.path %}
+                                active {% endif %}" style="font-family: 'Markazi Text';font-size: x-large">مشاوره</a>
+                                <a href="https://search.icbar.org/Lawyer/19967/%D8%B1%D9%88%D8%AD_%D8%A7%D9%86%DA%AF%DB%8C%D8%B2_%D9%82%D9%87%D8%B1%D9%85%D8%A7%D9%86%DB%8C%20%D8%A7%D8%B1%D8%B4%D8%AF" class="nav-item nav-link " target="_blank" style="font-family: 'Markazi Text';font-size: x-large">
+                                     پروفایل وکیل در سایت کانون</a>
+                            </div>
+                            <div class="ml-auto">
+                                <a class="btn" href="{% url 'abroad' %}">ایرانیان مقیم خارج</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Nav Bar End -->

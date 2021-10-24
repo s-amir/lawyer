@@ -1,0 +1,145 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html  lang="fa" dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <title>روح انگیز قهرمانی - وکیل پایه یک دادگستری </title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="روح انگیز قهرمانی - وکیل پایه یک دادگستری" name="keywords">
+        <meta content="روح انگیز قهرمانی - وکیل پایه یک دادگستری" name="description">
+
+<!-- Google Font -->
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+        </style>
+        <!--rtl-link-->
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!-- Top Bar Start -->
+           {% include 'partials/_topbar.html' %}
+
+            <!-- Nav Bar Start -->
+            {% include 'partials/_navbar.html' %}
+ <!--message-->
+            {% include 'partials/_alerts.html' %}
+
+            <!-- Carousel Start -->
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{% static 'img/carousel-1.jpg' %}" alt="Carousel Image">
+                        <div class="carousel-caption">
+                            <h1 class="animated fadeInLeft">ایرانیان مقیم خارج</h1>
+                            <p class="animated fadeInRight">خدمات حقوقی ایرانیان مقیم خارج </p>
+{#                            <a class="btn animated fadeInUp" href="{% url 'consultation' %}">درخواست مشاوره</a>#}
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="{% static 'img/carousel-2.jpg' %}" alt="Carousel Image">
+                        <div class="carousel-caption">
+                            <h1 class="animated fadeInLeft">مطالعه پرونده</h1>
+                            <p class="animated fadeInRight">ارزیابی مسیر حقوقی و انتخاب بهترین روش </p>
+{#                            <a class="btn animated fadeInUp" href="#"></a>#}
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="{% static 'img/carousel-3.jpg' %}" alt="Carousel Image">
+                        <div class="carousel-caption">
+                            <h1 class="animated fadeInLeft">مشاوره حقوقی</h1>
+                            <p class="animated fadeInRight">مشاوره حقوقی در تهران و یا به صورت تلفنی با وقت قبلی</p>
+{#                            <a class="btn animated fadeInUp" href="#">Get free consultation</a>#}
+                        </div>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- Carousel End -->
+
+
+            <!-- Top Feature Start-->
+            <div class="feature-top">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="feature-item">
+                                <i class="far fa-check-circle"></i>
+                                <h3>Legal</h3>
+                                <p>مسیر قانونی</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="feature-item">
+                                <i class="fa fa-user-tie"></i>
+                                <h3>Experienced</h3>
+                                <p>تجربه</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="feature-item">
+                                <i class="far fa-thumbs-up"></i>
+                                <h3>Success</h3>
+                                <p>پیروزی در پرونده</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="feature-item">
+                                <i class="far fa-handshake"></i>
+                                <h3>confidence</h3>
+                                <p>اعتماد متقابل</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Feature End-->
+
+
+
+
+       {% include 'partials/_footer.html' %}
+
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+        <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}"></script>
+
+        <!-- Template Javascript -->
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>
